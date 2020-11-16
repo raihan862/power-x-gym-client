@@ -31,8 +31,8 @@ const Catagories = () => {
                             
                                 <Card style={{minHeight:"400px",backgroundPosition:"100% 100%",backgroundImage:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(${item.bgImage})`,backgroundSize:"cover",color:"white",position:"relative"}}>
                                    
-                                    <Card.Body style={{ position:"absolute",top:"20%"}}>
-                                    <img src={item.image} alt="" width="30%" minHeight="60px" style={{margin:"auto",padding:"10px"}}/>
+                                    <Card.Body style={{ position:"absolute",top:"20%",textAlign:"center"}}>
+                                    <img src={item.image} alt="" width="30%" height="80px" style={{margin:"auto",padding:"10px"}}/>
                                         <h2 style={{padding:"10px"}}>{item.title}</h2>
                                         <p style={{textAlign:"left"}}>
                                             {item.description}

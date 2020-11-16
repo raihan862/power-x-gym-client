@@ -35,25 +35,27 @@ const Pricing = () => {
             <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et non laborum, accusamus quibusdam earum illo.</small>
             </div>
                
-            <Container style={{marginTop:"80px"}} id="services">
+            <Container  id="services">
             <Row>
                 {
                     ourTarget.map(item =>
                         <Col md={6} lg={4} style={{marginTop:"15px"}}>
                             
-                                <Card style={{minHeight:"600px",backgroundPosition:"center",backgroundImage:`linear-gradient(rgba(0,0,0,.07),rgba(0,0,255,.07)),url(${item.bgImage})`,backgroundSize:"cover",color:"white",position:"relative"}}>
+                                <Card style={{minHeight:"600px",backgroundPosition:"center",backgroundImage:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,255,.07)),url(${item.bgImage})`,backgroundSize:"cover",color:"white",position:"relative"}}>
                                    
                                     <Card.Body style={{textAlign:"center"}}>
-                                        <h5 style={{color:"#FCD842"}}>BILLED MONGTHLT</h5>
+                                        <h5 style={{color:"#FCD842"}}>BILLED MONTHLY</h5>
                                         <h2 style={{padding:"10px"}}>{item.title}</h2>
-                                        <h1 style={{color:"#FCD842"}}>$ {item.price}</h1>
+                                        <h1 style={{color:"#FCD842",lineHeight:"48px"}}>$ {item.price}</h1>
+                                        <div style={{width:"60%",margin:"auto",textAlign:"left"}}>
                                         {
                                             item.features.map(ft=>
-                                                <h6> <TiTick/> {ft} </h6>
+                                                <p style ={{padding:"3px 15px"}}> <TiTick/> {ft} </p>
                                                 )
                                         }
+                                        </div>
                                         <Link to="/membership">
-                                         <Button variant="" style={{backgroundColor:"#FCD842",padding:"5px 25px"}} >Purchase</Button>
+                                         <Button variant="" style={{backgroundColor:"#FCD842",padding:"10px 45px",marginTop:"20px"}} >Purchase</Button>
                                          </Link>
                                     </Card.Body>
                                   
