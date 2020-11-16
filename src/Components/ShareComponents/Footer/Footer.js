@@ -43,6 +43,10 @@ const Footer = () => {
                     <small>GEt exclusive news,features, updates from the shredder weight Loss Academy </small>
                 </Col>
             </Row>
+            <div style={{color:"white",textAlign:"center",display:"block", marginTop:"60px"}}>
+            <p >&copy; Copy Right Reserved</p>
+            </div>
+           
         </Container>
         </div>
     );

@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const AboutUs = () => {
     const aboutImg ="https://i.ibb.co/Zc6JYYv/about.jpg";
     return (
-        <Container style={{marginTop:"80px",minHeight:"600px"}}>
+        <Container style={{marginTop:"80px",minHeight:"600px"}} id="about">
             <Row>
                 <Col md={6} style={{padding:"30px"}}>
                         <img src={aboutImg} alt="" width ="100%" height="550px" />

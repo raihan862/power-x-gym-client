@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, Nav, Navbar} from 'react-bootstrap'
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.css'
 const NavBar = () => {
     return (
@@ -10,12 +11,12 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" id="control" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto" id="navlink" variant="pills dark"  defaultActiveKey="home">
-            <Nav.Link href="#home" eventKey='home'>Home</Nav.Link>
-            <Nav.Link href="#link" eventKey='service'>Services</Nav.Link>
-            <Nav.Link href="#link" eventKey='classes'>Our Classes</Nav.Link>
-            <Nav.Link href="#link" eventKey='about'>About Us</Nav.Link>   
-            <Nav.Link href="#link" eventKey='prices'>Prices</Nav.Link>   
-            <Nav.Link href="#link" eventKey='contact'>Contact Us</Nav.Link>   
+          <NavLink  className="tags" activeStyle={{ borderBottom:"2px solid red"}} exact={true} to="/" >Home</NavLink>
+            <NavLink  className="tags" activeStyle={{ borderBottom:"2px solid red" }}  to="/services" >Services</NavLink>
+            <NavLink  className="tags" activeStyle={{ borderBottom:"2px solid red" }} to="/classes" >Our Class</NavLink>
+            <NavLink  className="tags" activeStyle={{ borderBottom:"2px solid red" }} to="/about" >About Us</NavLink>
+            <NavLink  className="tags" activeStyle={{ borderBottom:"2px solid red" }} to='/pricing' >Pricing</NavLink>
+            <NavLink  className="tags" activeStyle={{ borderBottom:"2px solid red" }} to='/contact' >Contact</NavLink>
           </Nav>
            
         </Navbar.Collapse>

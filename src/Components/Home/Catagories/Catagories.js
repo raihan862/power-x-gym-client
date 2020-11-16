@@ -23,7 +23,7 @@ const Catagories = () => {
         }
     ]
     return (
-        <Container style={{marginTop:"80px"}}>
+        <Container style={{marginTop:"80px"}} id="services">
             <Row>
                 {
                     ourTarget.map(item =>
