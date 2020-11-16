@@ -1,8 +1,11 @@
 import React from 'react';
+import Footer from '../../ShareComponents/Footer/Footer';
+
 import AboutUs from '../AboutUs/AboutUs';
 import Catagories from '../Catagories/Catagories';
 import Header from '../Header/Header';
 import TrainingPrograms from '../TrainingPrograms/TrainingPrograms';
+import WhyChooseUs from '../WhyChooseUs/WhyChooseUs';
 
 const HomeContainer = () => {
     return (
@@ -11,6 +14,9 @@ const HomeContainer = () => {
             <Catagories></Catagories>
             <AboutUs></AboutUs>
             <TrainingPrograms></TrainingPrograms>
+            <WhyChooseUs></WhyChooseUs>
+            <Footer></Footer>
+          
         </div>
     );
 };
