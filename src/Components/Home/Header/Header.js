@@ -5,7 +5,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 const Header = () => {
     const headerBG = "https://i.ibb.co/Y31Xbt7/header-BGCopy.jpg"
     return (
-        <div style={{ minHeight: "900px", backgroundImage: `linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)),url(${headerBG})`, backgroundSize: "100% 100%",backgroundPosition:"100% " }}>
+        <div style={{ minHeight: "700px", backgroundImage: `linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)),url(${headerBG})`, backgroundSize: "100% 100%",backgroundPosition:"100% " }}>
             <Container>
                 <NavBar></NavBar>
                 <Row style={{marginTop:"80px" ,textAlign:"left"}}>
