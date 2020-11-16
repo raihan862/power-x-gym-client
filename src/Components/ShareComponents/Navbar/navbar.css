@@ -1,0 +1,9 @@
+#navlink a{
+    color: white;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+#control span{
+    color: white;
+    background-color: #FCD842;
+}
