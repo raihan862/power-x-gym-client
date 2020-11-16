@@ -44,7 +44,7 @@ const Footer = () => {
                 </Col>
             </Row>
             <div style={{color:"white",textAlign:"center",display:"block", marginTop:"60px"}}>
-            <p >&copy; Copy Right Reserved</p>
+            <p style={{marginBottom:"0px",padding:"5px"}} >&copy; Copy Right Reserved</p>
             </div>
            
         </Container>
