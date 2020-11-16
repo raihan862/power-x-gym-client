@@ -5,7 +5,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import OurClasses from './Components/OurClasses/OurClasses';
 import Catagories from './Components/Home/Catagories/Catagories';
 import NavBar from './Components/ShareComponents/Navbar/NavBar';
-import Pricing from './Components/Home/Pricing/Pricing';
+import Pricing from './Components/Pricing/Pricing';
+import MemberShip from './Components/MemberShip/MemberShip';
 function App() {
   return (
     <div >
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/about">
           <HomeContainer></HomeContainer>
+          </Route>
+          <Route path ="/membership">
+              <MemberShip></MemberShip>
           </Route>
           <Route path="/pricing">
             <Pricing></Pricing>
