@@ -8,7 +8,7 @@ const ShareHeader = (props) => {
 
         <div style={{ minHeight: "300px", backgroundImage: `linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)),url(${headerBG})`, backgroundSize: "cover",backgroundPosition:"100% " }}>
             <Container>
-                <NavBar></NavBar>
+                <NavBar />
                 <div style={{display:"block",margin:"auto",marginTop:"80px"}}>
                     <h1 style={{fontSize:"50px",color:"white"}}>RPOPS DATA</h1>
                 </div>
