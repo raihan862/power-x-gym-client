@@ -15,6 +15,7 @@ import ShareHeader from './Components/ShareComponents/ShareHeader/ShareHeader';
 import Footer from './Components/ShareComponents/Footer/Footer';
 import AboutUs from './Components/Home/AboutUs/AboutUs';
 import Contact from './Components/Home/Contact/Contact';
+import PaymentSuccess from './Components/MemberShip/PaymentSuccess/PaymentSuccess';
 function App() {
   return (
     <div >
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path="/pricing">
             <Pricing></Pricing>
+          </Route>
+          <Route path="/success">
+             <PaymentSuccess></PaymentSuccess>
           </Route>
         </Switch>
         

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import Footer from '../ShareComponents/Footer/Footer';
 import ShareHeader from '../ShareComponents/ShareHeader/ShareHeader';
 
@@ -45,7 +46,9 @@ const ClassDetail = () => {
                             </div>)
                         }
                         </Row>
-                        <Button variant="" style={{position:"absolute",bottom:"20px",righ:"40px",}}>Jion uS</Button>
+                        <Link to='/pricing'>
+                        <Button variant="" style={{position:"absolute",bottom:"20px",left:"auto",padding:"10px 35px",backgroundColor:"#FCD842"}}><h6>JOIN US</h6></Button>
+                        </Link>
                     </div>
                 </div>
             </div>
