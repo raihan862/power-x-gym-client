@@ -36,8 +36,6 @@ const TrainingPrograms = () => {
                     )
                 }
             </Row>
-
-
         </Container>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../../ShareComponents/Navbar/NavBar';
+
 import './header.scss'
 import { Button, Col, Container, Row } from 'react-bootstrap';
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
                         <p style={{padding:"20px 0px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea dolor tempore quisquam soluta assumenda et architecto rem expedita illo. Qui vero adipisci dignissimos eaque quis soluta minus,
                         est recusandae?</p>
                         <Button variant="" id="joinusBtn">JOIN US</Button>
+
                     </Col>
                     
                     <Col md={6} style={{textAlign:"right",marginTop:"15px"}}>
