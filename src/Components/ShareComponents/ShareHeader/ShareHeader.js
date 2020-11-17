@@ -10,7 +10,7 @@ const ShareHeader = (props) => {
             <Container>
                 <NavBar />
                 <div style={{display:"block",margin:"auto",marginTop:"80px",textAlign:"center"}}>
-    <h1 style={{fontSize:"50px",color:"white"}}>{props.title}</h1>
+                 <h1 style={{fontSize:"50px",color:"white"}}>{props.title}</h1>
                 </div>
             </Container>
 

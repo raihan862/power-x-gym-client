@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import './footer.css'
+import './footers.scss'
 import {FaYoutube,FaFacebook,FaInstagram,FaWhatsapp,FaTwitter} from 'react-icons/fa'
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <Container >
             <Row id="ui-list">
                 <Col md={3}>
-                <h1 style={{color:"white"}}>Power <span style={{color:"yellow"}}>X</span></h1>   
+                <h1 style={{color:"white"}}>Power <span  className="spanStyle">X</span></h1>   
                 </Col>
                 <Col md={2}>
                     <h6>Need Help?</h6>

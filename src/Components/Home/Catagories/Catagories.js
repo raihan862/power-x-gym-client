@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-
+import './catagory.scss'
 const Catagories = () => {
     const ourTarget = [
         {
@@ -23,15 +23,15 @@ const Catagories = () => {
         }
     ]
     return (
-        <Container style={{marginTop:"80px"}} id="services">
+        <Container style={{marginTop:"80px"}} >
             <Row>
                 {
                     ourTarget.map(item =>
                         <Col md={6} lg={4} style={{marginTop:"15px"}}>
                             
-                                <Card style={{minHeight:"400px",backgroundPosition:"100% 100%",backgroundImage:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(${item.bgImage})`,backgroundSize:"cover",color:"white",position:"relative"}}>
+                                <Card id="catagoryCard" style={{backgroundImage:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(${item.bgImage})`}}>
                                    
-                                    <Card.Body style={{ position:"absolute",top:"20%",textAlign:"center"}}>
+                                    <Card.Body id="catagoryCardbody" >
                                     <img src={item.image} alt="" width="30%" height="80px" style={{margin:"auto",padding:"10px"}}/>
                                         <h2 style={{padding:"10px"}}>{item.title}</h2>
                                         <p style={{textAlign:"left"}}>

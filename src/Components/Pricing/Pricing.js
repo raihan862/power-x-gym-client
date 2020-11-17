@@ -4,6 +4,7 @@ import Footer from '../ShareComponents/Footer/Footer';
 import ShareHeader from '../ShareComponents/ShareHeader/ShareHeader';
 import {TiTick} from 'react-icons/ti'
 import { Link } from 'react-router-dom';
+import './pricing.scss'
 const Pricing = () => {
     const ourTarget = [
         {
@@ -41,7 +42,7 @@ const Pricing = () => {
                     ourTarget.map(item =>
                         <Col md={6} lg={4} style={{marginTop:"15px"}}>
                             
-                                <Card style={{minHeight:"600px",backgroundPosition:"center",backgroundImage:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,255,.07)),url(${item.bgImage})`,backgroundSize:"cover",color:"white",position:"relative"}}>
+                                <Card id="pricingCard" style={{backgroundImage:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,255,.07)),url(${item.bgImage})`}}>
                                    
                                     <Card.Body style={{textAlign:"center"}}>
                                         <h5 style={{color:"#FCD842"}}>BILLED MONTHLY</h5>
@@ -55,7 +56,7 @@ const Pricing = () => {
                                         }
                                         </div>
                                         <Link to="/membership">
-                                         <Button variant="" style={{backgroundColor:"#FCD842",padding:"10px 45px",marginTop:"20px"}} >Purchase</Button>
+                                         <Button variant="" id="purshesBtn" >Purchase</Button>
                                          </Link>
                                     </Card.Body>
                                   

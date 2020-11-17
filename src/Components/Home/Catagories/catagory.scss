@@ -1,0 +1,13 @@
+@import '../../../App.scss';
+#catagoryCard{
+   min-height:400px;
+   background-position:100% 100%;
+   background-size:cover;
+   color:$textColor;
+   position:relative
+}
+#catagoryCardbody{
+    position:absolute;
+    top:20%;
+    text-align:center
+}
