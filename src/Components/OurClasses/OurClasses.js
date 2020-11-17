@@ -4,13 +4,18 @@ import ShareHeader from '../ShareComponents/ShareHeader/ShareHeader';
 import Footer from '../ShareComponents/Footer/Footer'
 import { Button, Card, Container } from 'react-bootstrap';
 import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { featchUser } from '../../Redux/Action/Action';
 
 const OurClasses = () => {
-    const [classes, setClasses] = useState([])
+    
+    
+    const classes = useSelector(state=> state.users)
+    
+    const dispatch = useDispatch()
+    
     useEffect(() => {
-        fetch('https://power-x-gym-server.herokuapp.com/classes')
-            .then(res => res.json())
-            .then(data => setClasses(data))
+        dispatch(featchUser())
     }, [])
 
     return (

@@ -8,10 +8,12 @@ import NavBar from './Components/ShareComponents/Navbar/NavBar';
  
 import Pricing from './Components/Pricing/Pricing';
 import MemberShip from './Components/MemberShip/MemberShip';
- 
+ import {Provider} from 'react-redux'
+import store from './Redux/Store/Store';
 function App() {
   return (
     <div >
+      <Provider store={store}>
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -38,7 +40,7 @@ function App() {
         </Switch>
         
       </BrowserRouter>
-
+      </Provider>
     </div>
   );
 }
