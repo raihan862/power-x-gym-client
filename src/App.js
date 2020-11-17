@@ -10,6 +10,7 @@ import Pricing from './Components/Pricing/Pricing';
 import MemberShip from './Components/MemberShip/MemberShip';
  import {Provider} from 'react-redux'
 import store from './Redux/Store/Store';
+import ClassDetail from './Components/ClassDetails/ClassDetail';
 function App() {
   return (
     <div >
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/">
           <HomeContainer></HomeContainer>
           </Route>
-          <Route path="/classes">
+          <Route exact path="/classes">
             <OurClasses></OurClasses>
           </Route>
           <Route path="/services">
@@ -33,7 +34,9 @@ function App() {
           <Route path ="/membership">
               <MemberShip></MemberShip>
           </Route>
- 
+          <Route path="/classes/detail/:id">
+            <ClassDetail/>
+          </Route>
           <Route path="/pricing">
             <Pricing></Pricing>
           </Route>
