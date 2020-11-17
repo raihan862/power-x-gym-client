@@ -12,9 +12,12 @@ const AboutUs = () => {
                 <Col md={6} style={{textAlign:"left",padding:"30px"}} id>
                     <h1>About US</h1>
                     <h2 style={{color:"#FCD842"}}>WE ARE HERE TO DREAM!</h2>
-                    <h2>OUR TEAM IS HERE TO SERVE YOU</h2>
+ 
+                    <h2>OUR TEAM IS HERE TO SURVE YOU</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Odio eos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga excepturi alias doloribus, sit necessitatibus repellendus debitis in eum ducimus nihil dicta libero. Nobis dolorem commodi eum atque. Doloremque ut iusto commodi itaque aliquam laboriosam reiciendis error assumenda unde cumque. asperiores aspernatur nisi non veritatis voluptatum facere. Distinctio, unde repellendus.</p>
+                    
+ 
                 </Col>
             </Row>
         </Container>

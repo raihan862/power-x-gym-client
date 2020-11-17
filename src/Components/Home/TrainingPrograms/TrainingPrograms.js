@@ -1,27 +1,41 @@
 import React from 'react';
-import "../../../../node_modules/slick-carousel/slick/slick.css"; 
+import "../../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
 import ourClasses from '../../../Data';
-import { Container, Row } from 'react-bootstrap';
-import { settings } from './setting';
+import { Col, Container, Row } from 'react-bootstrap';
+
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
+import './traning.scss'
 const TrainingPrograms = () => {
-  const  data = ourClasses.slice(0,4)
+    const data = [
+        {
+            title: "CARDIO TRANING",
+            image: "https://i.ibb.co/0F2PW89/chest-min.jpg"
+        },
+        {
+            title: "YOGA TRANING SESSION",
+            image: "https://i.ibb.co/NtGQ5tw/youga.png"
+        }
+    ]
     return (
-        <Container style={{marginTop:"60px"}}>
-            <h1 style={{padding:"20px"}}>TRAINING <span style={{color:"#FCD842"}}>PROGRAMS</span> </h1>
-             <Slider {...settings}>
-            {
-                data.map(dt=>
-                    <div style={{position:"relative"}} >
-                    <h1 style={{position:"absolute",backgroundColor:"#FCD842",padding:"10px",bottom:"40px",marginLeft:"10px"}}> {dt.title} </h1>
-                    <img src={dt.image} width="100%" height="500px" style={{padding:"10px"}}/>
-                       
-                    </div>
+        <Container style={{ marginTop: "60px",textAlign:"center" }}>
+            <h1 style={{ padding: "20px" }}>TRAINING <span className="spanStyle"  >PROGRAMS</span> </h1>
+            <Row>
+                {
+                    data.map(dt =>
+                        <Col md={6}>
+                            <Link to="/classes" >
+                                <div style={{ position: "relative" }} >
+                                    <h2 id="traningTitle"> {dt.title} </h2>
+                                    <img src={dt.image} width="100%" height="500px" style={{ padding: "10px" }} />
+
+                                </div>
+                            </Link>
+                        </Col>
                     )
-            }
-            </Slider>
-            
+                }
+            </Row>
         </Container>
     );
 };

@@ -1,0 +1,18 @@
+@import '../../../App.scss';
+#header-container{
+    min-height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)),url(https://i.ibb.co/Y31Xbt7/header-BGCopy.jpg);
+    background-size: 100% 100%;
+    background-position:100%; 
+}
+#colStyle{
+    color:$textColor;
+    margin-top:15px
+}
+#joinusBtn{
+    background-color:$bgColor ;
+    color: black;
+     padding: 8px 40px;
+     font-size:20px;
+     font-weight:$weight
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-
+ 
+import './choseus.scss'
+ 
 const WhyChooseUs = () => {
     const chooseUsCards = [
         {
@@ -20,15 +22,15 @@ const WhyChooseUs = () => {
         }
     ]
     return (
-        <Container style={{marginTop:"80px"}}>
-            <h1 style={{padding:"10px"}}><span style={{color:"#FCD842"}}>Why</span>  Choose Us</h1>
+ 
+        <Container style={{marginTop:"80px",textAlign:"center"}}>
+            <h1 style={{padding:"10px"}}><span className="spanStyle">Why</span>  Choose Us</h1>
+ 
             <Row>
                 {
                     chooseUsCards.map(item =>
                         <Col md={6} lg={4} style={{marginTop:"15px"}}>
-                            
-                                <Card style={{height:"350px",padding:"10px 3px",border :"1px solid #FCD842",boxShadow:"5px 5px 10px rgba(0,0,0,.1),-5px -5px 10px rgba(0,0,0,.2) "}}>
-                                   
+                                <Card id="choseusCard">   
                                     <Card.Body >
                                     <img src={item.image} alt="" width="35%"   style={{margin:"auto",padding:"10px"}}/>
                                         <h5 style={{padding:"10px",fontWeight:"800px"}}>{item.title}</h5>
