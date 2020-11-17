@@ -1,0 +1,36 @@
+.footerSection{
+    background-size: cover;
+    min-height: 450px;
+    width: 100%;
+    background-color: #FCD842;
+    text-align: center;
+    
+}
+#iconContainer{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   
+}
+.contactIcon{
+color: black;
+font-size: 25px;
+}
+ 
+#container{
+    padding-top: 30px;
+}
+@media screen and (max-width:766px){
+    #footerSection{
+        
+        min-height: 850px;
+         
+    }
+    
+   
+}
+@media screen and (max-width:986px){
+    #iconContainer{
+        flex-direction: column;
+    }
+}

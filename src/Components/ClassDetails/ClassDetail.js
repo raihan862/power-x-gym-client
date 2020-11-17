@@ -17,7 +17,7 @@ const ClassDetail = () => {
     
     return (
         <div>
-            <ShareHeader title="bannerTitle" />
+            <ShareHeader title={details[0].title.toUpperCase()}/>
             <div className="container m-5">
                 <div className="row">
                     <div className="col-md-7">
@@ -45,7 +45,7 @@ const ClassDetail = () => {
                             </div>)
                         }
                         </Row>
-                        <Button variant="" style={{position:"absolute",bottom:"20",righ:"40"}}>Jion uS</Button>
+                        <Button variant="" style={{position:"absolute",bottom:"20px",righ:"40px",}}>Jion uS</Button>
                     </div>
                 </div>
             </div>

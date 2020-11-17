@@ -11,6 +11,10 @@ import MemberShip from './Components/MemberShip/MemberShip';
  import {Provider} from 'react-redux'
 import store from './Redux/Store/Store';
 import ClassDetail from './Components/ClassDetails/ClassDetail';
+import ShareHeader from './Components/ShareComponents/ShareHeader/ShareHeader';
+import Footer from './Components/ShareComponents/Footer/Footer';
+import AboutUs from './Components/Home/AboutUs/AboutUs';
+import Contact from './Components/Home/Contact/Contact';
 function App() {
   return (
     <div >
@@ -23,11 +27,18 @@ function App() {
           <Route exact path="/classes">
             <OurClasses></OurClasses>
           </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
+          </Route>
           <Route path="/services">
-          <HomeContainer></HomeContainer>
+           <ShareHeader title="Our Services"></ShareHeader>
+           <Catagories></Catagories>
+           <Footer></Footer>
           </Route>
           <Route path="/about">
-          <HomeContainer></HomeContainer>
+          <ShareHeader title="About Us"></ShareHeader>
+            <AboutUs></AboutUs>
+           <Footer></Footer>
           </Route>
  
  
